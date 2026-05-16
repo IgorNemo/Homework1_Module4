@@ -4,7 +4,6 @@ def total_salary(path):
         count = 0
         with open(path, "r", encoding="utf-8") as fh:
             for line in fh:
-                # Розділяємо рядок по першій комі
                 name, salary = line.strip().split(',', 1)
                 total += float(salary)
                 count += 1
